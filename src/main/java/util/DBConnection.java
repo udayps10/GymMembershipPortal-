@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 
 public class DBConnection {
 
-    // I fixed the extra "String url =" and the missing quotes here:
+    
     private static final String URL = "jdbc:mysql://localhost:3306/fitzone?allowPublicKeyRetrieval=true&useSSL=false";
     private static final String USER = "root";
     private static final String PASSWORD = "Uday@2006";

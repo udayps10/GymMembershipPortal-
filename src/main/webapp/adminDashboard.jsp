@@ -15,7 +15,6 @@ box-sizing:border-box;
 font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
 }
 
-/* BACKGROUND */
 
 body{
 min-height:100vh;
@@ -23,7 +22,7 @@ background:linear-gradient(135deg,#eef2f7,#f9fafb);
 padding:50px;
 }
 
-/* HEADER */
+
 
 .header{
 display:flex;
@@ -52,7 +51,6 @@ transition:0.25s;
 background:#222;
 }
 
-/* GRID */
 
 .container{
 display:grid;
@@ -63,7 +61,6 @@ max-width:1400px;
 margin:auto;
 }
 
-/* CARD */
 
 .card{
 background:white;
@@ -83,7 +80,7 @@ transform:translateY(-8px);
 box-shadow:0 25px 65px rgba(0,0,0,0.12);
 }
 
-/* BLACK TITLE BAR */
+
 
 .card-header{
 background:black;
@@ -94,13 +91,12 @@ font-weight:600;
 letter-spacing:0.3px;
 }
 
-/* CARD CONTENT */
+
 
 .card-body{
 padding:30px;
 }
 
-/* DESCRIPTION FONT */
 
 .card-body p{
 font-family:Georgia,'Times New Roman',serif;
@@ -110,7 +106,7 @@ line-height:1.6;
 margin-bottom:28px;
 }
 
-/* BUTTON */
+
 
 .btn{
 display:inline-block;

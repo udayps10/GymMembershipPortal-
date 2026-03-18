@@ -117,7 +117,6 @@ public class User {
         this.expiry = expiry;
     }
 
-    // ---------- CALCULATE DAYS LEFT ----------
 
     public long getDaysLeft() {
 

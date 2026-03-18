@@ -1,16 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="model.User" %>
 <%
-    // 1. Get the user from session
+   
     User u = (User) session.getAttribute("user");
 
-    // 2. Security Check
+
     if (u == null) {
         response.sendRedirect("index.jsp");
         return;
     }
     
-    // 3. Prevent Null Errors: If gender/trainer is null, make it an empty string
+    
     String currentGender = (u.getGender() != null) ? u.getGender() : "";
     String currentTrainer = (u.getTrainer() != null) ? u.getTrainer() : "None";
 %>
@@ -20,7 +20,7 @@
 <title>Edit Member | Fitzone</title>
 
 <style>
-/* ===== BODY ===== */
+
 body{
     font-family:'Segoe UI',sans-serif;
     background:#f2f3f7;
@@ -31,7 +31,7 @@ body{
     min-height:100vh;
 }
 
-/* ===== CARD ===== */
+
 .container{
     width:420px;
     background:white;
@@ -42,7 +42,7 @@ body{
 
 h2{ text-align:center; margin-bottom:25px; color: #111; }
 
-/* ===== INPUTS ===== */
+
 input, select{
     width: 100%;
     padding: 12px;
@@ -50,10 +50,10 @@ input, select{
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 14px;
-    box-sizing: border-box; /* Fixes padding issues */
+    box-sizing: border-box; 
 }
 
-/* ===== BUTTON ===== */
+
 button{
     width:100%;
     padding:12px;

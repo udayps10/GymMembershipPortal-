@@ -24,13 +24,13 @@ public class ServletGym extends HttpServlet {
             return;
         }
 
-        // LOGIN
+       
         if (action.equals("login")) {
 
             String email = req.getParameter("email");
             String password = req.getParameter("password");
 
-            // ADMIN LOGIN
+         
             if (email.equals("admin@gym.com") && password.equals("admin123")) {
                 session.setAttribute("admin", "true");
                 res.sendRedirect(req.getContextPath() + "/adminDashboard.jsp");
@@ -47,7 +47,7 @@ public class ServletGym extends HttpServlet {
             }
         }
 
-        // REGISTER
+       
         else if (action.equals("register")) {
 
             User u = new User();
@@ -76,7 +76,7 @@ public class ServletGym extends HttpServlet {
             }
         }
 
-        // SELECT TRAINER
+        
         else if (action.equals("selectTrainer")) {
 
             User u = (User) session.getAttribute("user");
@@ -93,7 +93,7 @@ public class ServletGym extends HttpServlet {
             res.sendRedirect(req.getContextPath() + "/dashboard.jsp");
         }
 
-        // UPGRADE PLAN
+      
         else if (action.equals("upgradePlan")) {
 
             User u = (User) session.getAttribute("user");
@@ -120,7 +120,7 @@ public class ServletGym extends HttpServlet {
             return;
         }
 
-        // DELETE MEMBER
+
         if (action.equals("delete")) {
 
             int id = Integer.parseInt(req.getParameter("id"));
@@ -130,7 +130,6 @@ public class ServletGym extends HttpServlet {
             res.sendRedirect(req.getContextPath() + "/ServletGym?action=view");
         }
 
-        // VIEW MEMBERS
         else if (action.equals("view")) {
 
             req.setAttribute("members", dao.getAllUsers());
@@ -138,7 +137,6 @@ public class ServletGym extends HttpServlet {
             req.getRequestDispatcher("/viewMembers.jsp").forward(req, res);
         }
 
-        // LOGOUT
         else if (action.equals("logout")) {
 
             req.getSession().invalidate();
