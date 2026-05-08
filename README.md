@@ -124,6 +124,15 @@ Handling database operations using JDBC
 
 ---
 
+## 🤝 Contributions
+
+Contributions, issues, and feature requests are welcome.
+
+Feel free to fork this repository and submit a pull request.
+
+
+--- 
+
 
  # 👨‍💻 Author
 
